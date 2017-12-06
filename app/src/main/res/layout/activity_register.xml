@@ -4,7 +4,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.imakrisna.mertabusana.Login"
+    tools:context="net.imakrisna.mertabusana.LoginActivity"
     android:background="#fff"
     android:orientation="vertical"
     android:weightSum="1">
