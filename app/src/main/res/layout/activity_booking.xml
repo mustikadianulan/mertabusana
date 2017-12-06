@@ -13,6 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <TextView
@@ -20,12 +21,12 @@
                 android:layout_height="match_parent"
                 android:hint="Busana"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="40dp"/>
+                android:layout_marginTop="20dp"/>
 
             <EditText
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
         <LinearLayout
@@ -82,5 +83,11 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
 </LinearLayout>
