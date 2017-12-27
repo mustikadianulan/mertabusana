@@ -10,15 +10,15 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="140dp"
-        android:src="@drawable/fixlogo"
-        android:id="@+id/imageView"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="20dp"
-        android:layout_gravity="center"/>
+    <!--<ImageView-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="140dp"-->
+        <!--android:src="@drawable/fixlogo"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_gravity="center"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,9 +33,10 @@
             android:layout_marginTop="25dp"/>
 
         <EditText
+            android:id="@+id/edt_emails"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="username"
+            android:hint="email"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
@@ -51,7 +52,8 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="25dp"/>
         <EditText
-            android:layout_width="250dp "
+            android:id="@+id/edt_pas"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="password"
             android:layout_marginTop="20dp"
@@ -59,15 +61,30 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/btn_login"
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:src="@drawable/login"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:textSize="15sp"
-        android:hint="Forget Password?"
-        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:hint="Tidak punya akun? "
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:hint=" Buat Akun"
+            android:layout_gravity="center"/>
+    </LinearLayout>
 </LinearLayout>

@@ -7,12 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="500dp"
-        android:layout_height="100dp"
-        android:src="@drawable/fixlogo"
-        android:id="@+id/imageView"
-        android:layout_gravity="center"/>
+    <!--<ImageView-->
+        <!--android:layout_width="500dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/fixlogo"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_gravity="center"/>-->
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bnv"
         android:layout_width="match_parent"

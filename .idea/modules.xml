@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://D:\kuliah\semester 5\promob lanjutin\mertabusana\MyApplication.iml" filepath="D:\kuliah\semester 5\promob lanjutin\mertabusana\MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\kuliah\semester 5\promob lanjutin\mertabusana\app\app.iml" filepath="D:\kuliah\semester 5\promob lanjutin\mertabusana\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mertabusana.iml" filepath="$PROJECT_DIR$/mertabusana.iml" />
+      <module fileurl="file://E:\KULIAH\TI SM 5\PEMROGRAMAN MOBILE LANJUT\MyApplication\mertabusana.iml" filepath="E:\KULIAH\TI SM 5\PEMROGRAMAN MOBILE LANJUT\MyApplication\mertabusana.iml" />
     </modules>
   </component>
 </project>
