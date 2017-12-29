@@ -13,15 +13,21 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/noactionbar">
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/noactionbar">
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".BusanaActivity"></activity>
+        <activity android:name=".DetailActivity"/>
+        <activity android:name=".SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".BusanaActivity"></activity>
     </application>
 
 </manifest>

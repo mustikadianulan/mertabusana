@@ -1,5 +1,6 @@
 package net.imakrisna.mertabusana.api;
 
+import net.imakrisna.mertabusana.model.BookingModel;
 import net.imakrisna.mertabusana.model.BusanaModel;
 import net.imakrisna.mertabusana.model.UserModel;
 
@@ -35,4 +36,8 @@ public interface ApiInterface {
 
     @GET("search")
     Call<List<BusanaModel>> searchBusana(@Query("keyword") String keyword);
+
+    @GET("booking/{id_user}")
+    Call<List<BookingModel>> bookingUser(@Path("id_user") String id_user);
+
 }

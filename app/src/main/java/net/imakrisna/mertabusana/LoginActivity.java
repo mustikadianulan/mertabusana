@@ -38,11 +38,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mySharedPreference=new MySharedPreference(this);
-        if (mySharedPreference.getIsLogin()){
-            finish();
-            Intent intent= new Intent (this, MainActivity.class);
-            startActivity(intent);
-        }
         setContentView(R.layout.activity_login);
         init();
     }
@@ -95,8 +90,9 @@ public class LoginActivity extends AppCompatActivity {
                        mySharedPreference.setTELP(userModel.getNo_telp());
                        mySharedPreference.setJK(userModel.getJenis_kelamin());
                        mySharedPreference.setEMAIL(userModel.getEmail());
-                       finish();
+//                       finish();
                        Intent intent= new Intent (LoginActivity.this, MainActivity.class);
+                       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                        startActivity(intent);
                    }else{
                        Toast.makeText(LoginActivity.this, "Login Gagal", Toast.LENGTH_SHORT).show();

@@ -50,8 +50,8 @@ public class MySharedPreference {
         editor.apply();
     }
 
-    public void setJK(String JK) {
-        editor.putString(JK, JK);
+    public void setJK(String JenisKelamin) {
+        editor.putString(JK, JenisKelamin);
         editor.apply();
     }
 

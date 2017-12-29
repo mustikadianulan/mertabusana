@@ -1,6 +1,7 @@
 package net.imakrisna.mertabusana;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -18,7 +19,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class BusanaActivity extends AppCompatActivity {
+public class BusanaActivity extends AppCompatActivity implements BusanaAdapter.onClickListener {
     ApiService apiService=new ApiService();
     Call<List<BusanaModel>> apiCall;
     List<BusanaModel> listBusana=new ArrayList<>();
@@ -70,7 +71,14 @@ public class BusanaActivity extends AppCompatActivity {
     }
 
     public void setAdapter(){
-        adapter=new BusanaAdapter(listBusana,this);
+        adapter=new BusanaAdapter(listBusana,this,this);
         rvBusana.setAdapter(adapter);
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent=new Intent(this,DetailActivity.class);
+        intent.putExtra(DetailActivity.KEY_BUSANA,listBusana.get(position));
+        startActivity(intent);
     }
 }

@@ -95,7 +95,8 @@ public class RegisterActivity extends AppCompatActivity {
                     mySharedPreference.setJK(userModel.getJenis_kelamin());
                     mySharedPreference.setEMAIL(userModel.getEmail());
                     Intent intent= new Intent (RegisterActivity.this, MainActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
 
                 }else {

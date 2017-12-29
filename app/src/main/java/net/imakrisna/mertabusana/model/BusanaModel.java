@@ -1,10 +1,12 @@
 package net.imakrisna.mertabusana.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Mustika on 27/12/2017.
  */
 
-public class BusanaModel {
+public class BusanaModel implements Serializable{
     private int id_busana;
     private String nama_busana,harga_sewa,jenis_busana,deskripsi,status,stok,gambar;
 

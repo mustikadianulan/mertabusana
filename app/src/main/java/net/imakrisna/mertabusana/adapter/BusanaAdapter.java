@@ -22,18 +22,24 @@ import java.util.List;
 public class BusanaAdapter extends RecyclerView.Adapter<BusanaAdapter.ViewHolder>{
     private List<BusanaModel> listBusana;
     private Context context;
+    private onClickListener onClickListener;
 
     public static final String IMAGE_URL="http://192.168.43.124:8000/images/busana/";
 
-    public BusanaAdapter(List<BusanaModel> listBusana,Context context) {
+    public interface onClickListener{
+        void onItemClick(int position);
+    }
+
+    public BusanaAdapter(List<BusanaModel> listBusana, Context context, BusanaAdapter.onClickListener onClickListener) {
         this.listBusana = listBusana;
-        this.context=context;
+        this.context = context;
+        this.onClickListener = onClickListener;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(parent.getContext());
-        View view=inflater.inflate(R.layout.row_banten,parent,false);
+        View view=inflater.inflate(R.layout.row_busana,parent,false);
         return new ViewHolder(view);
     }
 
@@ -56,6 +62,12 @@ public class BusanaAdapter extends RecyclerView.Adapter<BusanaAdapter.ViewHolder
             super(itemView);
             imgBusana=itemView.findViewById(R.id.img_row_busana);
             txtNamaBusana=itemView.findViewById(R.id.txt_row_busana);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onClickListener.onItemClick(getAdapterPosition());
+                }
+            });
         }
     }
 }

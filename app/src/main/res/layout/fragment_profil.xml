@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="20dp">
     <ImageView
-        android:src="@drawable/user"
+        android:id="@+id/profil"
+        android:src="@drawable/profil"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:layout_width="80dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="100dp"/>
+        android:layout_height="100dp"/>
     <TextView
+        android:id="@+id/nama_profil"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="18sp"
         android:text="Nama Pemilik Profil"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,31 +30,13 @@
             android:layout_marginTop="20dp"/>
 
         <TextView
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:hint="name"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/email"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"/>
-
-        <TextView
+            android:id="@+id/alamat_profil"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="email"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"/>
+            android:hint="alamat"
+            android:textSize="17sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -67,35 +52,64 @@
             android:layout_marginTop="10dp"/>
 
         <TextView
+            android:id="@+id/notelp_profil"
             android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:hint="phone number"
-            android:layout_marginLeft="10dp"/>
+            android:layout_height="wrap_content"
+            android:hint="no telepon"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/user"
+            android:src="@drawable/gender"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/jenis_kelamin_profil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="jenis kelamin"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/email"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="40dp"/>
 
         <TextView
+            android:id="@+id/email_profil"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="username"
-            android:layout_marginLeft="10dp"/>
+            android:hint="email"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/iv_logout"
         android:layout_width="230dp"
         android:layout_height="60dp"
-        android:src="@drawable/edit"
+        android:src="@drawable/logout"
         android:layout_gravity="center"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="30dp"/>
 </LinearLayout>
